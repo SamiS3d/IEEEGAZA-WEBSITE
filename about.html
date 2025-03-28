@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+<link rel="icon" type="image/png" href="images/logo.png">
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>IEEE GAZA</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .header_section .navbar-nav .nav-link {
+      color: #ffffff !important; /* لون النص للعناصر العادية */
+      font-weight: 500; /* سمك النص */
+      margin: 0 10px; /* الهوامش بين الروابط */
+    }
+
+    .header_section .navbar-nav .nav-item.active .nav-link {
+      background-color: #ffffff; /* لون الخلفية للعنصر النشط */
+      color: #000000 !important; /* لون النص للعنصر النشط */
+      border-radius: 5px; /* جعل الزوايا دائرية قليلاً إذا رغبت */
+      padding: 5px 10px; /* إضافة بعض الحشو حول النص */
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف حول المربع */
+    }
+
+    .slider_section .background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 100vh;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+      filter: blur(20%);
+    }
+
+    .containerr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: calc(33.333% - 40px);
+      box-sizing: border-box;
+      position: relative;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .read-more {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    .read-more p, .read-more a {
+      margin-bottom: 10px;
+    }
+
+    .read-more a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .read-more a:hover {
+      text-decoration: underline;
+    }
+
+    .heading_container h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 40px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        width: calc(100% - 40px);
+      }
+    }
+  </style>  <!-- مكتبات CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/templatemo-leadership-event.css">
+
+  <!-- مكتبات جافاسكريبت -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="sub_page">
+<div id="loading-screen">
+    <div class="spinner"></div>
+</div>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+<script>
+    document.cookie = "cookie_name=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+</script>
+
+      <div class="header_top">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="IEEE GAZA">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Jobs</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">Knowledge</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Palestine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">About Team</a>
+            </li>
+
+          </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+<section class="about_section layout_padding">
+    <div class="containerr">
+        <div class="row">
+                        <div class="col-lg-19 col-12 d-flex flex-column justify-content-center align-items-right">
+                <div class="heading_container">
+                    <h2>Courses and WorkShops</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <div class="containerr">
+                        <div class="row">
+
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ueF56A_2NQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="containerr">
+        <div class="row">
+                        <div class="col-lg-19 col-12 d-flex flex-column justify-content-center align-items-right">
+                <div class="heading_container">
+                    <h2>Power Factor Correction</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+                            </div>
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OQPXKrhpo3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="containerr">
+        <div class="row">
+                        <div class="col-lg-19 col-12 d-flex flex-column justify-content-center align-items-right">
+                <div class="heading_container">
+                    <h2>A journey into the world of aviation</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+                            </div>
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7pDcwC7jZLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="containerr">
+        <div class="row">
+                        <div class="col-lg-19 col-12 d-flex flex-column justify-content-center align-items-right">
+                <div class="heading_container">
+                    <h2>UI/UX course</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+                            </div>
+                        </div>
+                        </div>
+<br>
+</br><br>
+</br>
+<div class="containerr">
+        <div class="row">
+		<div class="col-lg-19 col-12 d-flex flex-column justify-content-center align-items-right">
+			<div class="heading_container">
+				<h2>Digital Library</h2>
+			</div>
+		</div>
+        </div>
+</div>
+        <div class="containerr">
+		<div class="card">
+          <div class="img-box">
+          </div>
+            <img src="images/GD.png">
+
+<a onclick="showMore(this)">Clik here</a>
+
+                <div class="read-more">
+                    <button class="close-btn" onclick="hideMore(this)">Close</button>
+                    <p>Here You will find a biggest digital library in the world,</p>
+                    <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Ashraf%20Yunis%20Maghari" target="_blank">click here to show and study</a>
+                </div>
+
+		</div>
+	</div>
+<br>
+</br><br>
+</br>
+    <div class="containerr">
+        <div class="row">
+                        <div class="col-lg-19 col-12 d-flex flex-column justify-content-center align-items-right">
+                <div class="heading_container">
+                    <h2>Scientific papers</h2>
+                </div>
+            </div>
+        </div>
+        <div class="containerr">
+            <div class="card">
+                <a onclick="showMore(this)">Ashraf Yunis Maghari</a>
+                <div class="read-more">
+                    <button class="close-btn" onclick="hideMore(this)">Close</button>
+                    <p>Associate Professor at the Islamic University of Gaza, holds a Bachelor's degree from the Faculty of Science at the Islamic University of Gaza, and a Master's in Informatics from Clausthal University of Technology, Germany. His research focuses on information technology and networks.</p>
+                    <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Ashraf%20Yunis%20Maghari" target="_blank">IEEE Profile</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <a onclick="showMore(this)">Hala Jarallah El-Khozondar</a>
+                <div class="read-more">
+                    <button class="close-btn" onclick="hideMore(this)">Close</button>
+                    <p>Vice Dean of External Relations at the Islamic University of Gaza. Her research focuses on fiber optic sensors, magneto-optical insulators, and numerical simulation of microstructural evolution in polycrystalline materials.</p>
+                    <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Hala%20Jarallah%20El-Khozondar" target="_blank">IEEE Profile</a>
+                </div>
+            </div>
+	
+    <div class="card">
+        <a onclick="showMore(this)">Moayed Almobaied</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Researcher in the Department of Electrical Engineering and Intelligent Systems at the Islamic University of Gaza, contributing to research in electrical engineering and smart systems efficiency.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Moayed%20Almobaied" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Samy S. Abu-Naser</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in the Department of Information Technology at Al-Azhar University in Gaza, publishing research in artificial intelligence and software development.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Samy%20S.%20Abu-Naser" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Khalid H. Abushahla</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in the Engineering Department at Al-Azhar University in Gaza, focusing on civil and environmental engineering, water resource management, and infrastructure.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Khalid%20H.%20Abushahla" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Fady I. El-Nahal</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Researcher in the Department of Electrical Engineering and Intelligent Systems at the Islamic University of Gaza, focusing on electrical networks and power systems research.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Fady%20I.%20El-Nahal" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Jamal Al Zebda</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in the Mechanical Engineering Department at the Islamic University of Gaza, involved in research on fluid dynamics and heat transfer, with publications in international journals.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Jamal%20Al%20Zebda" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Ramadan Alhalabi</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Holds a Bachelor's degree in Electrical Engineering from the Islamic University of Gaza, and Master's and PhD degrees in Electrical Engineering from the University of California, San Diego. His research focuses on wireless communications and control systems.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Ramadan%20Alhalabi" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Ezzaldeen Edwan</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in the Department of Computer Systems Engineering at Palestine Technical College, Deir El-Balah, Gaza, participating in research related to computing systems and educational software development.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Ezzaldeen%20Edwan" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Ahmed Mosa Musleh</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Researcher and lecturer in the Electrical Engineering Department at the Islamic University of Gaza. His research includes developing new technologies in energy systems and renewable energy.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Ahmed%20Mosa%20Musleh" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Husam Al-Najar</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Assistant Professor at the Islamic University of Gaza. His research focuses on natural resource management and environmental quality improvement in urban areas.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Husam%20Al-Najar" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Mohammed A. Alhanjouri</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in the Civil Engineering Department at Al-Azhar University in Gaza. He participates in research related to structural engineering and construction project management.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Mohammed%20A.%20Alhanjouri" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Ahmed Issa</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Assistant Professor in the Mechanical Engineering Department at the Islamic University of Gaza. His research focuses on composite material design and manufacturing applications.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Ahmed%20Issa" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Mahmoud M. Abu Ghosh</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in computer engineering and networking. His research includes developing communication systems and improving wireless network performance.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Mahmoud%20M.%20Abu%20Ghosh" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Nasreddin Elmezaini</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Professor in the Physics Department at the Islamic University of Gaza. His research focuses on material physics and theoretical physics.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Nasreddin%20Elmezaini" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Alaaeddin B. AlQazzaz</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Assistant Professor at Palestine University. His research focuses on software development and big data analysis.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Alaaeddin%20B.%20AlQazzaz" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Fadi M. Albatsh</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in industrial engineering and management. His research includes improving industrial processes and applications of engineering management.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Fadi%20M.%20Albatsh" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Anas A. M. Alqanoo</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Assistant Professor in the Electrical Engineering Department at the Islamic University of Gaza. His research focuses on digital communications and signal processing.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Anas%20A.%20M.%20Alqanoo" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a  onclick="showMore(this)">Maher A. El-Hallaq</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in software engineering and application development. His research includes software systems design and performance improvement.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Maher%20A.%20El-Hallaq" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Mohammed Taha O. El Astal</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Researcher in applied physics. His research focuses on laser applications and optical measurement techniques.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Mohammed%20Taha%20O.%20El%20Astal" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Alaa Alhabbash</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Professor in the Mechanical Engineering Department at Al-Azhar University in Gaza. His research focuses on material engineering and manufacturing techniques.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Alaa%20Alhabbash" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Mohammed A. Awadallah</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Assistant Professor in the Department of Computer Systems Engineering. His research includes artificial intelligence and machine learning.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Mohammed%20A.%20Awadallah" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a onclick="showMore(this)">Iyad AlAgha</a>
+        <div class="read-more">
+            <button class="close-btn" onclick="hideMore(this)">Close</button>
+            <p>Works in computer engineering and information technology. He participates in research related to information security and cloud computing systems development.</p>
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Iyad%20AlAgha" target="_blank">IEEE Profile</a>
+        </div>
+    </div>
+
+</div>
+<script>
+    function showMore(element) {
+        element.nextElementSibling.style.display = 'block';
+    }
+
+    function hideMore(element) {
+        element.parentElement.style.display = 'none';
+    }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->  <!-- info section -->
+  <section class="info_section ">
+
+    <div class="container">
+      <div class="contact_nav">
+
+<a href="mailto:samii@ieee.org">
+  <i class="fa fa-envelope" aria-hidden="true"></i>
+  <span>
+    Email: IEEE GAZA
+  </span>
+</a>
+
+      </div>
+
+      <div class="info_top ">
+        <div class="row info_main_row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_links">
+              <h4>
+                QUICK LINKS
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="service.html">Jobs</a>
+                <a class="" href="about.html">Knowledge</a>
+                <a class="" href="project.html">Palestine</a>
+                <a class="" href="testimonial.html">About Team</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="info_post">
+              <div class="post_box">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+      </div>
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="info_logo">
+              <a href="">
+                <img src="images/logo2.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+            <div class="social_box">
+              <a href="https://web.facebook.com/IEEE.IUG">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/ieeettu/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/ieeettu/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- إضافة jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- إضافة Bootstrap JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    window.onload = function() {
+        var loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.style.display = 'none';
+    };
+</script>
+
+</body>
+
+</html>
